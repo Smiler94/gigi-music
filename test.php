@@ -2,5 +2,5 @@
 require './vendor/autoload.php';
 use \Gigi\GigiMusic;
 
-$gigi = new GigiMusic(1);
-print_r($gigi->getFirst(2));
+$gigi = new GigiMusic(GigiMusic::GigiMusicType_Random);
+print_r($gigi->getFirst(1));

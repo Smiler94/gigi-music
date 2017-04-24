@@ -2,13 +2,13 @@
 namespace Gigi;
 class GigiMusic
 {
-    const GigiMusicType_Rndom = 0;
+    const GigiMusicType_Random = 0;
     const GigiMusicType_Seq = 1;
 
     public function __construct($type)
     {
         switch ($type) {
-            case self::GigiMusicType_Rndom:
+            case self::GigiMusicType_Random:
                 # code...
                 $this->provider = new GigiRandom();
                 break;
